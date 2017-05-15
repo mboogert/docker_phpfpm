@@ -9,5 +9,5 @@ RUN mkdir -p /usr/src/php/ext/redis \
 
 ADD phpcustom.conf /usr/local/etc/php-fpm.d
 
-ADD app/ /
+ADD src/ /
 
