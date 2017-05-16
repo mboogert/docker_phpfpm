@@ -8,6 +8,7 @@ RUN mkdir -p /usr/src/php/ext/redis \
     && docker-php-ext-install redis
 
 ADD phpcustom.conf /usr/local/etc/php-fpm.d
+ADD www.conf /usr/local/etc/php-fpm.d
 
 ADD src/ /
 
