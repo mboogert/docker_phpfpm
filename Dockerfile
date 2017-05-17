@@ -9,6 +9,8 @@ RUN mkdir -p /usr/src/php/ext/redis \
 
 ADD phpcustom.conf /usr/local/etc/php-fpm.d
 ADD www.conf /usr/local/etc/php-fpm.d
+ADD 00-alpine.conf /etc/sysctl.d
+ADD hashsize.conf /etc/modprobe.d/
 
 ADD src/ /
 
