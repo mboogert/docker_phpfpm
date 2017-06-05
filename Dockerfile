@@ -1,4 +1,5 @@
-FROM php:7.1-fpm-alpine
+#FROM php:7.1-fpm-alpine
+FROM php:5-fpm-alpine
 
 ENV PHPREDIS_VERSION 3.0.0
 
